@@ -2,6 +2,8 @@
 
 Swinging up a [pendulmn](https://gym.openai.com/envs/Pendulum-v0) by [PPO(Proximal Policy Optimization)](https://blog.openai.com/openai-baselines-ppo/)
 
+Please refer to [this Qiita entry](http://qiita.com/ashitani/items/e9e18f09f130476a7a84).
+
 ![movie](https://raw.githubusercontent.com/ashitani/PPO_pendulmn/master/movie/out.gif)
 
 # Usage
