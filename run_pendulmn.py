@@ -21,9 +21,9 @@ def policy_fn(name, ob_space, ac_space):
 
 import pposgd_simple
 
-RECORD_AVI = False
+RECORD_MOVIE = False
 
-if RECORD_AVI:
+if RECORD_MOVIE:
     import cv2
 
 def replay(env_id, num_timesteps, seed):
@@ -45,11 +45,11 @@ def replay(env_id, num_timesteps, seed):
     env = gym.make(env_id)
     observation = env.reset()
 
-    if RECORD_AVI:
+    if RECORD_MOVIE:
         i=0
 
     for _ in range(num_timesteps):
-      if RECORD_AVI:
+      if RECORD_MOVIE:
        img=env.render(mode="rgb_array")
        img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
        cv2.imwrite("movie/%d.png"%i, img)
